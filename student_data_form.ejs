@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+        <h2> Manage your Data here : </h2>
+          <% students.forEach(function(index) { %>
+          <form action="/update/<%= index.name %>" method="post">
+
+            Name : <input type="text" name="name" value= <%=index.name%> />
+            <br><br>
+          Course :   <input type="text" name="course" value= <%=index.course%> />
+            <br><br>
+          Age :   <input type="text" name="age" value= <%=index.age%> />
+            <br><br>
+          Email :   <input type="text" name="email" value= <%=index.email%> />
+            <br><br>
+          <button type="submit" name="button">Update</button>
+        <%  }) %>
+      </form>
+  </body>
+</html>

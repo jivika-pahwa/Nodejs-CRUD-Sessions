@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+        <h2> Data from Student Database : </h2>
+
+          <% students.forEach(function(index) { %>
+            <p> <%= index.name %></p>
+            <p> <%= index.course %> </p>
+            <p> <%= index.age %></p>
+            <p> <%= index.email %></p>
+            <h4> -*-*-*-*-*-</h4>
+        <%  }) %>
+  </body>
+</html>
